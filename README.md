@@ -1,5 +1,7 @@
 🏥 Sistema de Gerenciamento de Fila - Blua
+
 📌 Descrição
+
 Este projeto implementa um sistema de gerenciamento de fila de atendimento para teleconsultas médicas. O sistema utiliza estruturas de dados fundamentais para organizar pacientes, priorizar emergências e registrar histórico de atendimentos.
 
 - Funcionalidades
