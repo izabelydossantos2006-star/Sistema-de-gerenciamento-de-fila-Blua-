@@ -9,7 +9,7 @@ Simular atendimento sequencial por médico
 Registrar histórico das consultas (pilha - LIFO)
 Desfazer último atendimento
 
-- Estruturas de Dados Utilizadas
+Estruturas de Dados Utilizadas
 Fila (FIFO) → organização dos pacientes
 Fila de emergência → prioridade de atendimento
 Pilha (LIFO) → histórico e desfazer ações
