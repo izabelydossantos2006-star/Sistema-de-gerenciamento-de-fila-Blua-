@@ -4,6 +4,7 @@
 
 Este projeto implementa um sistema de gerenciamento de fila de atendimento para teleconsultas médicas. O sistema utiliza estruturas de dados fundamentais para organizar pacientes, priorizar emergências e registrar histórico de atendimentos.
 
+
 - Funcionalidades
 
 Enfileirar pacientes (FIFO)
@@ -16,6 +17,7 @@ Registrar histórico das consultas (pilha - LIFO)
 
 Desfazer último atendimento
 
+
 - Estruturas de Dados Utilizadas
 
 Fila (FIFO) → organização dos pacientes
@@ -26,6 +28,7 @@ Pilha (LIFO) → histórico e desfazer ações
 
 Listas encadeadas → implementação das estruturas
 
+
 - Como Executar
 
 Acesse um compilador C (ex: OnlineGDB)
@@ -35,6 +38,7 @@ Copie o código do arquivo main.c
 Execute o programa
 
 Utilize o menu interativo
+
 
 📋 Menu do Sistema
 
@@ -50,6 +54,7 @@ Utilize o menu interativo
 
 0 → Sair
 
+
 - Cenários Demonstrados
 
 Atendimento normal (ordem FIFO)
@@ -57,6 +62,7 @@ Atendimento normal (ordem FIFO)
 Prioridade para emergência
 
 Histórico e desfazer atendimento
+
 
 📂 Estrutura do Projeto
 
