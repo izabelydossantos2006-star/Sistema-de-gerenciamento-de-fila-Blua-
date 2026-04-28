@@ -70,7 +70,7 @@ main.c
 
 README.md
 
-- Autor
+👨‍💻 Autor
 
 Projeto desenvolvido para fins acadêmicos.
 
