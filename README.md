@@ -16,7 +16,7 @@ Sistema de gerenciamento de fila de atendimento médico por teleconsulta, feito 
 
 -Desfazer último atendimento com pilha de ações
 
-================================================================================
+============================================================================
 
 🗂️ Estruturas de Dados Utilizadas
 Todas as estruturas foram construídas com listas encadeadas, sem uso de arrays ou bibliotecas externas.
@@ -44,7 +44,7 @@ Listas encadeadas → implementação das estruturas
 
 -Pilha_vazia → Verifica se a pilha está vazia
 
-===================================================================================
+=============================================================================
 
 🧪 Cenários demonstrados
 
