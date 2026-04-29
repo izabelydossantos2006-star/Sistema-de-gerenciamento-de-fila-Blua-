@@ -2,31 +2,58 @@
 
 📌 Descrição
 
-Este projeto implementa um sistema de gerenciamento de fila de atendimento para teleconsultas médicas. O sistema utiliza estruturas de dados fundamentais para organizar pacientes, priorizar emergências e registrar histórico de atendimentos.
+Sistema de gerenciamento de fila de atendimento médico por teleconsulta, feito em C com estruturas de dados construídas com listas encadeadas.
+
+📋 Funcionalidades
+
+-Enfileirar pacientes (FIFO)
+
+-Priorizar atendimentos de emergência (FIFO)
+
+-Simular atendimento sequencial por médico
+
+-Registrar histórico das consultas (pilha - LIFO)
+
+-Desfazer último atendimento com pilha de ações
 
 
-- Funcionalidades
+🗂️ Estruturas de Dados Utilizadas
+Todas as estruturas foram construídas com listas encadeadas, sem uso de arrays ou bibliotecas externas.
 
-Enfileirar pacientes (FIFO)
+Fila (FIFO) → organização dos pacientes, usada na fila regular e na fila de emergência 
 
-Priorizar atendimentos de emergência
+-Enqueue() → Insere no final (Tail)
 
-Simular atendimento sequencial por médico
+-Dequeue() → Remove do inicio (Head)
 
-Registrar histórico das consultas (pilha - LIFO)
+-Peek_fila() → Consulta o próximo sem remover 
 
-Desfazer último atendimento
+-Fila_vazia() → Verifica se a fila está vazia 
 
 
-- Estruturas de Dados Utilizadas
-
-Fila (FIFO) → organização dos pacientes
-
-Fila de emergência → prioridade de atendimento
-
-Pilha (LIFO) → histórico e desfazer ações
+Pilha (LIFO) → Usada no histórico de consultas e na pilha de ações (desfazer)
 
 Listas encadeadas → implementação das estruturas
+
+-Push() → Insere no topo
+
+-Pop() → Remove do topo
+
+-Peek_pilha() → Consulta o topo sem remover
+
+-Pilha_vazia → Verifica se a pilha está vazia
+
+
+🧪 Cenários demonstrados
+
+Cenário 1 — Chegada em massa de pacientes regulares
+Vários pacientes são adicionados à fila regular. O médico chama todos em ordem FIFO via dequeue(). Demonstra que o primeiro a chegar é o primeiro a ser atendido.
+
+Cenário 2 — Emergência interrompe a fila regular
+Pacientes regulares já estão na fila quando uma emergência chega. O sistema verifica fila_vazia(&emergencia) antes de decidir qual fila processar, garantindo prioridade absoluta às emergências.
+
+Cenário 3 — Auditoria com pilha + cancelamento administrativo
+Consultas são finalizadas e empilhadas no histórico (LIFO). Um cancelamento administrativo executa pop() na pilha de ações e reverte o último atendimento, reinserindo o paciente na fila. Demonstra uso de pilha para desfazer operações.
 
 
 - Como Executar
@@ -55,20 +82,12 @@ Utilize o menu interativo
 0 → Sair
 
 
-- Cenários Demonstrados
-
-Atendimento normal (ordem FIFO)
-
-Prioridade para emergência
-
-Histórico e desfazer atendimento
-
-
 📂 Estrutura do Projeto
 
 main.c
 
 README.md
+
 
 👨‍💻 Autor
 
