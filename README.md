@@ -44,7 +44,6 @@ Listas encadeadas → implementação das estruturas
 
 -Pilha_vazia → Verifica se a pilha está vazia
 
-=============================================================================
 
 🧪 Cenários demonstrados
 
@@ -58,7 +57,7 @@ Cenário 3 — Auditoria com pilha + cancelamento administrativo
 Consultas são finalizadas e empilhadas no histórico (LIFO). Um cancelamento administrativo executa pop() na pilha de ações e reverte o último atendimento, reinserindo o paciente na fila. Demonstra uso de pilha para desfazer operações.
 
 
-- Como Executar
+❓ Como Executar
 
 Acesse um compilador C (ex: OnlineGDB)
 
